@@ -1,6 +1,66 @@
 * {
+    font-family: 'MaplestoryOTFBold';
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text {
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+}
+
+.green {
+    color: rgb(61, 237, 0);
+}
+
+#side-bar {
+    position: fixed;
+    z-index: 3;
+    top: 45%;
+    right: 60px;
+}
+
+#side-bar>ul {
+    text-align: center;
+    display: block;
+}
+
+#side-bar>ul>li {
+    border-radius: 50%;
+    color: white;
+    border: 1px solid rgb(61, 237, 0);
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+#side-bar>ul>li:hover {
+    color: black;
+    background-color: white;
+}
+
+#top-btn {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    padding: 10px;
+    border: 3px solid black;
+    font-size: 30px;
+    background-color: white;
 }
 
 p {
@@ -59,6 +119,7 @@ a:hover {
 }
 
 #top-nav>li>a {
+    font-family: 'Pretendard-Regular';
     font-size: 12px;
 }
 
@@ -87,16 +148,17 @@ a:hover {
     margin-top: 21px;
 }
 
+#kategorie-nav>li {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 #kategorie-nav>li>a {
-    /* background-color: red; */
-    color: gray;
-    display: block;
-    line-height: 90px;
+    line-height: 60px;
     padding: 0 16px 0 16px;
 }
 
-#kategorie-nav>li>a:hover {
-    color: black;
+#kategorie-nav>li:hover {
+    background-color: white;
 }
 
 .right_0 {
@@ -104,9 +166,13 @@ a:hover {
     right: 0;
 }
 
-#inputbar,
+#inputbar {
+    border: 1px solid rgb(61, 237, 0);
+
+    border-radius: 50px;
+}
+
 #menu {
-    margin-top: 21px;
     height: 42px;
 }
 
@@ -249,12 +315,14 @@ a:hover {
 }
 
 .price {
+    font-family: 'Pretendard-Regular';
     font-size: 24px;
     color: red;
     float: right;
 }
 
 .won {
+    font-family: 'Pretendard-Regular';
     float: right;
     color: red;
     margin: 10px 0 0 5px;
@@ -351,6 +419,7 @@ a:hover {
 }
 
 .time {
+    font-family: 'Pretendard-Regular';
     color: darkblue;
 }
 
@@ -591,4 +660,8 @@ a:hover {
     padding: 20px 0 20px 0;
     display: block;
     font-size: 12px;
+}
+
+#gray_footer>ul>li>a, #white_footer>ul>li>a, #l_footer3>p {
+    font-family: 'Pretendard-Regular';
 }
